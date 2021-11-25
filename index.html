@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html ng-app='MsgApp'>
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Expressions and Interpolation</title>
+    <script src="angular.min.js"></script>
+    <script src="app.js"></script>
+
+    <style>
+        body {
+            font-size: 1.2em;
+        }
+    </style>
+</head>
+<body>
+    <h1>Activity #4</h1>
+    <div ng-controller='MsgController'>
+        {{name}} has message for you <br>
+        <!-- {{name}} -->
+        {{sayMessage()}}
+        <div>
+            <button ng-click="feedSasuke()">Amaterasu</button>
+            <br>
+            <img ng-src="images/Sasuke_{{stateOfBeing}}.png">
+        </div>
+    </div>
+</body>
+</html>
